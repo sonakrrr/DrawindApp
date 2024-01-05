@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lab5.example.lab5.TableFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10sp"
+                    android:textAlignment="center">
+
+    <!--                <TableRow android:id="@+id/headerRow">-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/shapeName"-->
+    <!--                        android:layout_marginHorizontal="10dp"-->
+    <!--                        android:layout_weight="3"-->
+    <!--                        android:text="Назва" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/shapeX1"-->
+    <!--                        android:layout_marginHorizontal="10dp"-->
+    <!--                        android:layout_weight="1"-->
+    <!--                        android:text="x1" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/shapeY1"-->
+    <!--                        android:layout_marginHorizontal="10dp"-->
+    <!--                        android:layout_weight="1"-->
+    <!--                        android:text="y1" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/shapeX2"-->
+    <!--                        android:layout_marginHorizontal="10dp"-->
+    <!--                        android:layout_weight="1"-->
+    <!--                        android:text="x2" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/shapeY2"-->
+    <!--                        android:layout_marginHorizontal="10dp"-->
+    <!--                        android:layout_weight="1"-->
+    <!--                        android:text="y2" />-->
+
+    <!--                </TableRow>-->
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scrollView">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Завантажити"
+                android:id="@+id/saveButton"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Очистити"
+                android:id="@+id/loadButton"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

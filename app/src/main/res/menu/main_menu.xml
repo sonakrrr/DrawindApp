@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Крапка"
+        android:id="@+id/pointButton"
+        app:showAsAction="always"
+        android:icon="@drawable/point_inactive"/>
+    <item
+        android:title="Лінія"
+        android:id="@+id/lineButton"
+        app:showAsAction="always"
+        android:icon="@drawable/line_inactive"/>
+    <item
+        android:title="Прямокутник"
+        android:id="@+id/rectButton"
+        app:showAsAction="always"
+        android:icon="@drawable/rectangle_inactive"/>
+    <item
+        android:title="Елліпс"
+        android:id="@+id/ellipseButton"
+        app:showAsAction="always"
+        android:icon="@drawable/ellipse_inactive"/>
+    <item
+        android:title="Лінія з крапками"
+        android:id="@+id/lineWithPointsButton"
+        app:showAsAction="always"
+        android:icon="@drawable/linewithpoints_inactive"/>
+    <item
+        android:title="Куб"
+        android:id="@+id/cubeButton"
+        app:showAsAction="always"
+        android:icon="@drawable/cube_inactive"/>
+    <item
+        android:title="Таблиця об'єктів"
+        android:id="@+id/toggleTableButton"
+        app:showAsAction="always"
+        android:icon="@drawable/table"/>
+    <item
+        android:title="Крапка"
+        android:id="@+id/pointSelect"
+        android:checkable="true"/>
+    <item
+        android:title="Лінія"
+        android:id="@+id/lineSelect"
+        android:checkable="true"/>
+    <item
+        android:title="Прямокутник"
+        android:id="@+id/rectSelect"
+        android:checkable="true"/>
+    <item
+        android:title="Еліпс"
+        android:id="@+id/ellipseSelect"
+        android:checkable="true"/>
+    <item
+        android:title="Куб"
+        android:id="@+id/cubeSelect"
+        android:checkable="true"/>
+    <item
+        android:title="Лінія з крапками"
+        android:id="@+id/lineWithPointsSelect"
+        android:checkable="true"/>
+    <item
+        android:title="Таблиця об'єктів"
+        android:id="@+id/toggleTableSelect"
+        android:checkable="true"/>
+</menu>
